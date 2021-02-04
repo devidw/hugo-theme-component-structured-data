@@ -1,0 +1,29 @@
+= Hugo Theme Component for Structured Data
+
+== Setup
+. Add this theme component to your list of themes inside your `config`-file
+. Add the following statement in the layout file where your `head` lives:
+
+[source]
+----
+{{ partial "structureddata/include.html" . }}
+----
+
+
+== Usage
+
+=== Configuration
+.required
+- BaseURL
+- LanguageCode
+
+=== Frontmatter
+
+.required
+- date
+- title
+
+.optional
+- lastmod
+- description
+- author
