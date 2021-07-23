@@ -23,17 +23,26 @@ theme = ["your-base-theme", "hugo-theme-component-structured-data"]
 == Usage
 
 === Configuration
-.required
-- BaseURL
-- LanguageCode
+|===
+| Required
+
+a|
+* `BaseURL`
+* `LanguageCode`
+|===
+
 
 === Frontmatter
 
-.required
-- date
-- title
+|===
+| Required | Optional
 
-.optional
-- lastmod
-- description
-- author
+a|
+* `date`
+* `title`
+
+a|
+* `author`
+* `description`
+* `lastmod`
+|===
