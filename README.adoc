@@ -1,7 +1,7 @@
 = Hugo Theme Component for Structured Data
 
 == Setup
-=== 1. clone theme to your themes directory
+=== 1. Clone this theme component to your themes directory
 [source, sh]
 ----
 git submodule add https://github.com/orgbiz/hugo-theme-component-structured-data
@@ -13,7 +13,7 @@ git submodule add https://github.com/orgbiz/hugo-theme-component-structured-data
 theme = ["your-base-theme", "hugo-theme-component-structured-data"]
 ----
 
-=== 3. Add the following statement in the layout file where your `head` lives:
+=== 3. Add the following statement in the layout file where your `<head></head>` lives:
 [source, go]
 ----
 {{ partial "structureddata/include.html" . }}
