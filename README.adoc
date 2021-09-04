@@ -12,7 +12,7 @@ git submodule add https://github.com/hugoseotheme/hugo-theme-component-structure
 === 2. Add this theme component to your list of themes inside your config-file
 [source, toml]
 ----
-theme = ["hugo-seo-theme", "hugo-theme-component-structured-data"]
+theme = ["…", "hugo-theme-component-structured-data", "…"]
 ----
 
 === 3. Add the following statement in the layout file where your `<head></head>` lives:
