@@ -26,6 +26,7 @@ theme = ["…", "hugo-theme-component-structured-data", "…"]
 Add `schemas` key to your content frontmatter and provide an array of content types as value, e.g. `[BlogPosting]`.
 
 .Yaml example
+[source, yaml]
 ----
 schemas: [BlogPosting]
 ----
