@@ -23,6 +23,12 @@ theme = ["…", "hugo-theme-component-structured-data", "…"]
 
 
 == Usage
+Add `schemas` key to your content frontmatter and provide an array of content types as value, e.g. `[BlogPosting]`.
+
+.Yaml example
+----
+schemas: [BlogPosting]
+----
 
 === Configuration
 |===
@@ -35,7 +41,6 @@ a|
 
 
 === Frontmatter
-
 |===
 | Required | Optional
 
