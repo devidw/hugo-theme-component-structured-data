@@ -1,0 +1,14 @@
+{{ if .IsHome }}
+
+{{ else if .IsPage }}
+
+  {{ $context := . }}
+
+  {{ range .Params.Schemas }}
+    {{ $partialPath := printf "partials/structureddata/schemas/%s.go.html" . }}
+    {{ if templates.Exists $partialPath }}
+      {{ partial $partialPath $context }}
+    {{ end }}
+  {{ end }}
+
+{{ end }}
