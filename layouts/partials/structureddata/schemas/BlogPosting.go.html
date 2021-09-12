@@ -11,6 +11,12 @@
 		"datePublished": {{ .Date.Format $ISO8601 }},
 		"dateModified": {{ .Lastmod.Format $ISO8601 | default (.Date.Format $ISO8601) }},
 		"url": {{ .Permalink }},
+		{{- if .Site.Params.Author }}
+		"author": {
+			"@type": "Person",
+			"name": {{ .Site.Params.Author }}
+		},
+		{{- end }}
 		"headline": {{ .Title }},
 		{{- if .Description }}
 		"description": {{ .Description }},
