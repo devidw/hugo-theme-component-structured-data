@@ -15,7 +15,7 @@
 		{{- if .Description }}
 		"description": {{ .Description }},
 		{{- end }}
-		"inLanguage": {{ .Site.LanguageCode }}
+		"inLanguage": {{ .Site.LanguageCode }},
 		"articleSection": {{ .Section }},
 		"articleBody": {{ .Plain }},
 		"wordCount": {{ .Content | countwords }},
