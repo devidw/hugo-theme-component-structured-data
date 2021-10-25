@@ -21,6 +21,8 @@ theme = ["…", "hugo-theme-component-structured-data", "…"]
 {{ partial "structureddata/include.html" . }}
 ----
 
+NOTE: When using the https://hugoseotheme.com[Hugo Theme for perfect SEO] this will be done automatically for you so there's really no more configuration needed here.
+
 
 == Usage
 Add `schemas` key to your content frontmatter and provide an array of content types as value, e.g. `[BlogPosting]`.
