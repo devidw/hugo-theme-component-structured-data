@@ -6,7 +6,7 @@ The Structured Data Theme Component is a submodule, which is designed and mainta
 === 1. Clone this theme component to your `/themes` directory
 [source, sh]
 ----
-git submodule add https://github.com/hugoseotheme/hugo-theme-component-structured-data ./themes/hugo-theme-component-structured-data
+git submodule add https://github.com/devidw/hugo-theme-component-structured-data ./themes/hugo-theme-component-structured-data
 ----
 
 === 2. Add this theme component to your list of themes inside your config-file
@@ -21,7 +21,7 @@ theme = ["…", "hugo-theme-component-structured-data", "…"]
 {{ partial "structureddata/include.html" . }}
 ----
 
-NOTE: When using the https://hugoseotheme.com[Hugo Theme for perfect SEO] this will be done automatically for you so there's really no more configuration needed here.
+// NOTE: When using the https://hugoseotheme.com[Hugo Theme for perfect SEO] this will be done automatically for you so there's really no more configuration needed here.
 
 
 == Usage
