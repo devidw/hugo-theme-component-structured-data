@@ -1,8 +1,11 @@
 = Hugo Theme Component for Structured Data
 
-The Structured Data Theme Component is a submodule, which is designed and maintained for the https://hugoseotheme.com[Hugo SEO Theme]. You can use it on your own theme by following the instructions below. Also make sure to check out the https://gohugo.io/hugo-modules/theme-components/[docs about Theme Components].
+You can use the Structured Data Theme Component on your own theme by following the instructions below. Also make sure to check out the https://gohugo.io/hugo-modules/theme-components/[docs about Theme Components].
 
-== Setup
+.Currently available schema types include:
+* BlogPosting
+
+== Installation
 === 1. Clone this theme component to your `/themes` directory
 [source, sh]
 ----
@@ -55,4 +58,5 @@ a|
 * `author`
 * `description`
 * `lastmod`
+* `lang`
 |===

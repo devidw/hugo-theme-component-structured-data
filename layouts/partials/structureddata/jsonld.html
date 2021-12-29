@@ -1,0 +1,25 @@
+{{ if .IsHome }}
+
+{{ else if .IsPage }}
+
+{{ $context := . }}
+
+{{ $schemas := slice "" }}
+{{ $schemas = .Params.Schemas }}
+
+{{ if and (in $.Site.Params.mainSections .Section) (not (isset .Params "schemas")) }}
+{{ $schemas = slice "BlogPosting" }}
+{{ end }}
+
+{{/*
+{{ $schemas }}
+*/}}
+
+{{ range $schemas }}
+{{ $partialPath := printf "partials/structureddata/schemas/%s.html" . }}
+{{ if templates.Exists $partialPath }}
+{{ partial $partialPath $context }}
+{{ end }}
+{{ end }}
+
+{{ end }}
